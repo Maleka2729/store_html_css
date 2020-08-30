@@ -1,0 +1,235 @@
+body{
+    font-family: system-ui;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    flex: auto;
+    text-align: center;
+    font-size: 15px;
+}
+
+a {
+    color: black;
+    padding: 6px;
+    text-decoration: none;
+}
+
+.mycart {
+    font-size: 15px;
+}
+
+.plates {
+    background-color: rgba(37, 34, 34, 0.904);
+    color: white;
+    display: block;
+    width: 53%;
+    height: 350px;
+    margin: auto; 
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+}
+
+.section{
+    background-image: url(https://raw.githubusercontent.com/cfa-devweb/exercices/master/store-css/media/plates-header.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+
+h1{
+    padding-top: 100px;
+    text-align: center;
+    font-family: serif;
+}
+
+.txt{
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.box_articles_1{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.articles_1{
+    margin: auto;
+    padding-top: 50px;
+}
+
+.description{
+    text-align: center ;
+}
+
+
+.categories{
+    color: gray;
+}
+
+.prix{
+    color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.articles_1 > img{
+    width: 289px;
+    height: 250px;
+}
+
+.topnav, .lock{
+    display: none;
+}
+
+/* responsive tablette */
+
+@media screen and (max-width: 768px){
+    .section{
+        background-image: url(https://raw.githubusercontent.com/cfa-devweb/exercices/master/store-css/media/plates-header.jpg);
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .box_articles_1{
+        display: flex;
+        flex-wrap: wrap;
+        width: 700px;
+    }
+
+    .txt{
+        text-align: center;
+        font-size: 15px;
+        padding-right: 13px;
+        padding-left: 13px;
+    }
+
+    h1{
+        font-size: 28px;
+        padding-top: 50px;
+    }
+
+    .plates {
+        background-color: rgba(37, 34, 34, 0.904);
+        color: white;
+        display: block;
+        width: 60%;
+        height: 270px;
+        margin: auto; 
+    }
+
+}
+
+/* responsive mobile */
+
+@media screen and (max-width: 425px){
+    .box_articles_1{
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+
+    .categories{
+        color: gray;
+        font-size: 10px;
+    }
+    
+    .prix{
+        color: gray;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 10px;
+    }
+
+    .name{
+        font-size: 10px;
+        width: 70%;
+        height: 24px;
+    }
+
+    .articles_1 > img{
+        width: 170px;
+        height: 130px;
+    }
+
+    .plates {
+        background-color: rgba(37, 34, 34, 0.904);
+        color: white;
+        display: block;
+        width: 60%;
+        height: 130px;
+        margin: auto; 
+    }
+    
+    .section{
+        background-image: url(https://raw.githubusercontent.com/cfa-devweb/exercices/master/store-css/media/plates-header.jpg);
+        background-position: center;
+        background-size: 100%;
+    }
+
+    h1{
+        padding-top: 13px;
+        text-align: center;
+        font-family: serif;
+        font-size: 13px;
+    }
+
+    .txt{
+        text-align: center;
+        font-size: 9px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    hr{
+        visibility: hidden;
+    }
+
+    .articles_1{
+        margin: auto;
+        padding-top: 20px;
+        text-align: center;
+        width: 170px;
+    }
+
+    .description{
+        text-align: center;
+    }
+
+    p.name{
+        width: 100%;
+        padding: 0 2px;
+    }
+
+    .header{
+        display: flex;
+    }
+
+    .logo{
+        position: absolute;
+        left: 168px;
+
+    }
+
+    .tab, .mycart{
+        display: none;
+    }
+
+    .topnav{
+        float: left;
+        display: block;
+    }
+
+    .lock{
+        display: block;
+        float: right;
+    }
+}
+
+
+
